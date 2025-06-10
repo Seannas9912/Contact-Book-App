@@ -86,6 +86,14 @@
                 document.getElementById("submitForm").hidden = false;
                 document.getElementById("editContact").hidden = true;
             }
+
+            function submitForm(e) {
+                e.preventDefault();
+
+                const form = new FormData(document.querySelector("#editForm"));
+                form.append('apiKey', apiKey);
+                form.append('id', id);
+            }
         </script>
     </body>
 </html>
