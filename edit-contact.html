@@ -55,13 +55,24 @@
                         return response.json();
                     })
                     .then(function (data) {
-                        // display contact details
+                        displayOutput(data);
                         console.log(data);
                     })
             }
 
             function homeLink() {
                 window.open("index.html", "_self");
+            }
+
+            function displayOutput(data) {
+                avatarImg = `
+                    <img src="${rootPath}controller/uploads/${data[0].avatar}" width="200" />
+                `
+                document.getElementById("avatarImage").innerHTML = avatarImg;
+                document.getElementById("firstname").value = data[0].firstname;
+                document.getElementById("lastname").value = data[0].lastname;
+                document.getElementById("email").value = data[0].email;
+                document.getElementById("mobile").value = data[0].mobile;
             }
         </script>
     </body>
