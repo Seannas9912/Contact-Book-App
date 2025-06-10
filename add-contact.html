@@ -36,6 +36,14 @@
         <script src="config.js"></script>
         <script>
 
+            function submitForm(e) {
+                e.preventDefault();
+
+                const formData = new FormData(document.querySelector('#editForm'));
+                form.append('apiKey', apiKey);
+
+                
+            }
 
         </script>
     </body>
