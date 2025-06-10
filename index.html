@@ -13,7 +13,7 @@
 
         <script src="config.js"></script>
         <script>
-
+            document.getElementById("addContact").addEventListener('click', addContact);
             document.getElementById("refresh").addEventListener('click', fetchContacts);
 
             function fetchContacts() {
@@ -41,6 +41,10 @@
                 }
                 output += "</table>";
                 document.getElementById("table").innerHTML = output;
+            }
+
+            function addContact() {
+                window.open("add-contact.html", "_self");
             }
 
         </script>
