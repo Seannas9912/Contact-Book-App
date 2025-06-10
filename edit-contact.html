@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Contact</title>
+    </head>
+    <body>
+        <div id="avatarImage"></div>
+        <br/>
+        <form id="editForm">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" readonly>
+            <br/>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" readonly>
+            <br/>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" readonly>
+            <br/>
+
+            <label for="mobile">Mobile:</label>
+            <input type="text" id="mobile" name="mobile" readonly>
+            <br/>
+
+            <label for="avatar" id="avatarLabel" hidden>Change Profile Image:</label><br/>
+            <input type="file" id="avatar" name="avatar" hidden>
+            <br/>
+            <br/>
+            <button id="submitForm" type="submit" hidden>Submit</button>
+        </form>
+        <br/><br/>
+        <button id="homeLink" type="button">Home</button>
+        <button id="editContact" type="button">Edit</button>
+        <button id="deleteContact" type="button">Delete</button>
+
+        <script src="config.js"></script>
+        <script>
+        
+        </script>
+    </body>
+</html>
